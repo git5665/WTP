@@ -1,0 +1,144 @@
+<style>
+
+.top {
+    position:absolute;
+    left:0; right:0;
+    margin:0;
+    padding:0;
+}
+.left {
+    position:absolute;
+    left:0; top:115px; bottom: 0;
+    width: 150px;
+}
+.main {
+    position: absolute;
+    left:15%; top:15%; right:0; bottom:0;
+}
+.header {
+         background-color : rgb(22, 21, 21) ;
+         height : 10%;
+         width: 100%;
+         list-style-type: none;
+         display : inline;
+         text-align: right;
+         position: fixed;
+    }
+    .header-li {
+        font-size: 24px;
+        padding : 20;
+        margin : 15;
+        display: inline-block;
+        border: none;
+        border-radius: 30%;
+    }
+    a {
+        color : white;
+        text-decoration: none;
+    }
+
+    li {
+        text-align: center;
+        padding : 20;
+        margin : 0;
+        border :0.5px solid white;
+        border-radius: 10%;
+        font-size: 24px;
+        
+    }
+
+    li:hover a {
+        color: rgb(21, 21, 22);
+    }
+    li:hover {
+        background-color: white;
+        color: black;
+    }
+    .sidebar-ul {
+         background-color : rgb(22, 21, 21) ;
+         margin:0;
+         padding: 0;
+         height : 90%;
+         width: 15%;
+         list-style-type: none;
+         position:fixed;
+         
+         
+    }
+    .dac{
+        padding-left: 400;
+    }
+    table{
+        width: 90%;
+        height: 50%;
+    }
+   td{
+   position:sticky;
+   }
+    
+
+</style>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<div class="top">
+    <ul class = "header">
+        <li class = "header-li"> <a href="#" >Home</a></li>
+        <li class = "header-li"><a href="#" >Career</a></li>
+        <li class = "header-li"><a href="#" >About</a></li>
+        <li class = "header-li"><a href="#" >Contact Us</a></li>
+    </ul>
+</div>
+<div class="left">
+    <ul class = sidebar-ul >
+        <li> <a href="#" >Home</a></li>
+        <li>  <a href="#" >Career</a></li>
+        <li> <a href="#" >About</a></li>
+        <li> <a href="#" >Contact Us</a></li>
+    </ul>
+</div>
+<div class="main">
+     <form class="dac">
+     <table border="2">
+       <caption> <h1>Form details</h1></caption>
+        <tr>
+            <td>First Name :</td> 
+            <td><input type="text" placeholder="First Name"/></td>
+        </tr>
+        <tr>
+            <td>Last Name :</td> 
+            <td><input type="text" placeholder="Last Name"/></td>
+        </tr>
+        <tr>
+            <td>Gender :</td> 
+            <td><input type="radio" name = "gender"/>Male<input type="radio" name = "gender"/>Female<input type="radio" name = "gender"/>Other</td>
+        </tr>
+        <tr>
+            <td>Date of Birth :</td> 
+            <td><input type="date"/></td>
+        </tr>
+        <tr>
+            <td>Email ID :</td> 
+            <td><input type="email"/></td>
+        </tr>
+        <tr>
+            <td>Select City :</td>
+            <td>
+                <select>
+                <option>Bangalore</option>
+                <option>Delhi</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Skills :</td> 
+            <td><input type="checkbox" name = "gender"/>JAVA<input type="checkbox" name = "gender"/>.NET<input type="checkbox" name = "gender"/>DSA</td>
+        </tr>
+        <tr >
+            <td  colspan="2"><input style="margin-left: 35%;" type="reset" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit"/></td>
+            
+        </tr>
+     </table>
+    </form>
+</div>
